@@ -8,10 +8,19 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a:visited{
+    color: inherit;
+}
+
 /* reusable classes */
 
 .container-1100{
     max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-1300{
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -23,6 +32,10 @@ html{
 
 .vertical-align{
     vertical-align: middle;
+}
+
+.inline-block{
+    display: inline-block;
 }
 
 /* ----------- */
@@ -60,13 +73,51 @@ nav a{
     padding: .5em 0;
 }
 
-.btn{
-    padding: .5em 1em;
+.btn-nav{
+    margin: 1em;
 }
 
 .btn-blue{
-    margin: 0 1em;
+    padding: .5em 1em;
 
     background-color: #0061ff;
     color: white;
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+
+    height: 750px;
+
+    background-color: #b4d0e7;
+}
+
+header h1{
+    font-size: 80px;
+
+    padding-top: 1em;
+    word-wrap: ;
+}
+
+header div{
+    max-width: 400px;
+}
+
+header p{
+    margin: 2em 0;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+header i{
+    font-size: 36px;
+}
+
+.jumbo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -12%);
+    max-height: 550px;
 }

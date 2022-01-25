@@ -43,6 +43,16 @@ html{
 .container-float.right{
     float: right;
 }
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 20;
+}
+
 nav img{
     margin-left: 1.5em;
 }
@@ -83,8 +93,9 @@ nav a{
 
 header{
     position: relative;
+    padding-top: 100px;
 
-    height: 750px;
+    height: 850px;
 
     background-color: #b4d0e7;
 }
@@ -118,7 +129,7 @@ a:visited > .fa-arrow-down{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-10%, -12%);
+    transform: translate(-10%, -3%);
     max-height: 550px;
 }
 
@@ -152,6 +163,13 @@ h2{
     max-width: 350px;
     max-height: 1100px;
     border: 1px solid gray;
+    margin: 0 10px;
+}
+
+.marginfix{
+    margin-left: -10px;
+    margin-right: -10px;
+    
 }
 
 .card-title{
@@ -161,10 +179,11 @@ h2{
 }
 
 .card-content{
+    position: relative;
     padding: 2rem;
 }
 
-.card-long h3{
+h3{
     margin: 1em 0;
     font-size: 30px;
 }
@@ -193,6 +212,7 @@ p a:visited{
 }
 
 .card-content li{
+    margin-top: 1.5em;
     list-style: none;
     text-align: left;
 }
@@ -200,6 +220,26 @@ p a:visited{
 .card-content li::before{
     content: "\2713";
     color: #0061FF;
+    font-size: 20px;
 }
+
+.card-wide{
+    margin: 70px 0;
+    border: 1px solid gray;
+}
+
+.card-wide h4{
+    margin-bottom: 1.5em;
+}
+
+.card-wide a{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 350px;
+}
+
+
+
 
 

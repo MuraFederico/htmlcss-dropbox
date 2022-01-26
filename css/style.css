@@ -64,6 +64,10 @@ p{
     text-decoration: none;
 }
 
+.btn-white:visited{
+    color: black;
+}
+
 /* ----------- */
 
 .container-float.left{
@@ -297,6 +301,151 @@ p a:visited{
 .card a:visited{
     color: black;
 }
+
+.affiliation-title{
+    padding-bottom: 100px;
+}
+
+.affiliation-title a{
+    color: #0061FF;
+}
+
+.affiliation-title a:visited{
+    color: #0061ff;
+}
+
+.affiliation-title a:hover{
+    text-decoration: none;
+}
+
+.container-square{
+    position: relative;
+    height: 500px;
+}
+
+.big-square-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+
+.big-square-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+}
+
+.left > .square{
+    float: left;
+}
+
+.square{     
+     position: relative;
+     width: 250px;
+     height: 250px;
+     padding: 30px;
+
+}
+
+.square img{
+    position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+}
+    
+.designit{
+    background-color: #a1d39b;
+    border: 10px solid #d0e9cd;
+    color: white;
+}
+
+.asu{
+    background-color: #61082b;
+}
+
+.uf{
+    background-color: #0293ce;
+}
+
+.topps{
+    background-color: #ff1b1c;
+}
+
+.wbf{
+    background-color: #d5011f;
+}
+
+.hearst{
+    background-color: #b4d0e7;
+}
+
+.lonely-planet{
+    background-color: #0d2481;
+}
+
+.clear-ch{
+    background-color: #ffd830;
+}
+
+.affiliation-content{
+    position: absolute;
+    top: 0;
+    left: 500px;
+
+    width: calc(100% - 1000px);
+    height: 500px;
+
+    margin: 0 auto;
+    padding: 4rem;
+
+    overflow-y: scroll;
+
+    background-color: #f5f5f5;
+}
+
+.affiliation-content img{
+    width: 20%;
+}
+
+.line{
+    padding: 1em 0;
+    color: lightgray;
+    font-size: 20px;
+}
+
+.join{
+    background-color: #b4d0e7;
+    padding: 100px 0;
+    line-height: 3.5rem;
+}
+
+.join h2{
+    margin: 0;
+    color: #61082b;
+    vertical-align: middle;
+}
+
+.float-title{
+    float: left;
+    width: 60%;
+}
+
+.float-btn{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.float-btn a{
+    vertical-align: middle;
+}
+
 
 
 

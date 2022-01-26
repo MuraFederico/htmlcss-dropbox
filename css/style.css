@@ -55,6 +55,10 @@ p{
     text-decoration: none;
 }
 
+.btn-blue:hover{
+    background-color: #0061ffad ;
+}
+
 .btn-white{
     padding: .5em 1em;
 
@@ -212,16 +216,10 @@ h2{
     margin-bottom: 3em;
 }
 
-.plan-card{
-    position: relative;
-}
-
 .card-long{
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 350px;
-    max-height: 1100px;
+    max-width: calc(33% - 20px);
+    min-height: 700px;
+    vertical-align: top;
     border: 1px solid gray;
     margin: 0 10px;
 }
@@ -274,6 +272,7 @@ p a:visited{
     margin-top: 1.5em;
     list-style: none;
     vertical-align: top;
+    display: inline-block;
 }
 
 .card-content li::before{
@@ -498,6 +497,17 @@ p a:visited{
     position: relative;
     padding: 1em 0;
     font-size: 20px;
+}
+
+.hidden-text{
+    color: gray;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    display: none;
+}
+
+.container-faq:hover .hidden-text{
+    display: block;
 }
 
 .fa-chevron-down{

@@ -91,13 +91,13 @@ nav img{
     margin-left: 1.5em;
 }
 
-nav ul{
+.nav-list{
     display: inline-block;
 
     font-size: 0;
 }
 
-nav li{
+.nav-list > li{
     display: inline-block;
     margin: 1.5em;
 
@@ -107,10 +107,37 @@ nav li{
     font-size: 20px;
 }
 
-nav a{
+.nav-list a{
     color: black;
     text-decoration: none;
-    padding: .5em 0;
+    padding: 1.6em 0;
+    line-height: 1.5em;
+}
+
+.nav-list a:hover{
+    border-bottom: 3px solid gray;
+}
+
+.support:hover .hidden-list{
+    visibility: visible;
+}
+
+.hidden-list{
+    position: fixed;
+    top: 90px;
+    right: 400px;
+    background-color: white;
+    padding: 1em;
+    list-style: none;
+    border: 2px solid lightgray;
+    visibility: hidden;
+}
+
+.hidden-list a{
+    color: black;
+    text-decoration: none;
+    padding: .2em 0;
+    line-height: 1.5em;
 }
 
 .btn-nav{
@@ -130,7 +157,7 @@ header h1{
     font-size: 80px;
 
     padding-top: 1em;
-    word-wrap: ;
+
 }
 
 header div{
@@ -185,14 +212,21 @@ h2{
     margin-bottom: 3em;
 }
 
+.plan-card{
+    position: relative;
+}
+
 .card-long{
+    position: relative;
+    top: 0;
+    left: 0;
     max-width: 350px;
     max-height: 1100px;
     border: 1px solid gray;
     margin: 0 10px;
 }
 
-.marginfix{
+.plan-card.marginfix{
     margin-left: -10px;
     margin-right: -10px;
     
@@ -232,10 +266,14 @@ p a:visited{
     color: #0061FF;
 }
 
+.card-content ul{
+    vertical-align: top;
+}
+
 .card-content li{
     margin-top: 1.5em;
     list-style: none;
-    text-align: left;
+    vertical-align: top;
 }
 
 .card-content li::before{
@@ -320,14 +358,14 @@ p a:visited{
 
 .container-square{
     position: relative;
-    height: 500px;
+    max-height: 500px;
 }
 
 .big-square-left{
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
+    max-width: 500px;
     height: 500px;
 }
 
@@ -335,8 +373,12 @@ p a:visited{
     position: absolute;
     top: 0;
     right: 0;
-    width: 500px;
+    max-width: 500px;
     height: 500px;
+}
+
+.row{
+    max-width: 500px;
 }
 
 .left > .square{
@@ -344,19 +386,19 @@ p a:visited{
 }
 
 .square{     
-     position: relative;
-     width: 250px;
-     height: 250px;
-     padding: 30px;
+    position: relative;
+    max-width: 50%;
+    height: 250px;
+    padding: 30px;
 
 }
 
 .square img{
     position: relative;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
     
 .designit{
@@ -501,6 +543,7 @@ footer li{
 }
 
 footer h4{
+    font-size: 28px;
     margin-bottom: 30px;
 }
 

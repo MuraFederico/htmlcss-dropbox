@@ -450,7 +450,7 @@ p a:visited{
     margin: 0 auto;
     padding: 4rem;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 
     background-color: #f5f5f5;
 }

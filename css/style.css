@@ -152,7 +152,7 @@ header{
     position: relative;
     padding-top: 100px;
 
-    height: 850px;
+    height: 800px;
 
     background-color: #b4d0e7;
 }
@@ -164,14 +164,16 @@ header h1{
 
 }
 
-header div{
-    max-width: 400px;
+.header-content{
+    float: left;
+    vertical-align: top;
+    max-width: 29%;
 }
 
 header p{
     margin: 2em 0;
-    font-size: 20px;
-    line-height: 1.3em;
+    font-size: 16px;
+    line-height: 1.5em;
 }
 
 header i{
@@ -182,12 +184,14 @@ a:visited > .fa-arrow-down{
     color: black    ;
 }
 
+.container-img{
+    margin-top: 30px;
+    margin-right: -20px;
+    width: 70%;
+}
+
 .jumbo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -3%);
-    max-height: 550px;
+    width: 100%;
 }
 
 .plan{
@@ -218,10 +222,11 @@ h2{
 
 .card-long{
     max-width: calc(33% - 20px);
-    min-height: 700px;
+    min-height: 1180px;
     vertical-align: top;
     border: 1px solid gray;
     margin: 0 10px;
+    padding-bottom: 100px;
 }
 
 .plan-card.marginfix{

@@ -222,7 +222,7 @@ h2{
 
 .card-long{
     max-width: calc(33% - 20px);
-    min-height: 1180px;
+    min-height: 1320px;
     vertical-align: top;
     border: 1px solid gray;
     margin: 0 10px;
@@ -254,6 +254,7 @@ h2{
 .wrap{
     vertical-align: top;
     width: calc(100% - 30px);
+    padding-bottom: 1.5em;
 }
 
 .card-content p{
@@ -317,6 +318,7 @@ p a:visited{
 
 .content h3{
     margin: 0;
+    padding-bottom: 1.5rem;
 }
 
 .content p{
